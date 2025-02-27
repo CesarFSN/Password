@@ -20,6 +20,7 @@ namespace Password_SNCF
 		private System.Windows.Forms.TextBox TxtContras;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label label3;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -49,12 +50,13 @@ namespace Password_SNCF
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.TxtContras = new System.Windows.Forms.TextBox();
+			this.label3 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// BtnAceptar
 			// 
-			this.BtnAceptar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.BtnAceptar.Location = new System.Drawing.Point(74, 207);
 			this.BtnAceptar.Name = "BtnAceptar";
 			this.BtnAceptar.Size = new System.Drawing.Size(75, 23);
@@ -65,7 +67,7 @@ namespace Password_SNCF
 			// 
 			// label1
 			// 
-			this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.Maroon;
 			this.label1.Location = new System.Drawing.Point(49, 97);
 			this.label1.Name = "label1";
@@ -76,11 +78,11 @@ namespace Password_SNCF
 			// 
 			// TxtUsuario
 			// 
-			this.TxtUsuario.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TxtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.TxtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.TxtUsuario.Location = new System.Drawing.Point(112, 94);
 			this.TxtUsuario.Name = "TxtUsuario";
-			this.TxtUsuario.Size = new System.Drawing.Size(100, 22);
+			this.TxtUsuario.Size = new System.Drawing.Size(100, 21);
 			this.TxtUsuario.TabIndex = 3;
 			// 
 			// pictureBox1
@@ -95,24 +97,34 @@ namespace Password_SNCF
 			// 
 			// label2
 			// 
-			this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.ForeColor = System.Drawing.Color.Maroon;
-			this.label2.Location = new System.Drawing.Point(18, 147);
+			this.label2.Location = new System.Drawing.Point(29, 147);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(88, 23);
+			this.label2.Size = new System.Drawing.Size(77, 23);
 			this.label2.TabIndex = 6;
 			this.label2.Text = "Contraseña";
 			// 
 			// TxtContras
 			// 
-			this.TxtContras.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TxtContras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.TxtContras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.TxtContras.Location = new System.Drawing.Point(112, 144);
 			this.TxtContras.Name = "TxtContras";
 			this.TxtContras.PasswordChar = '*';
-			this.TxtContras.Size = new System.Drawing.Size(100, 22);
+			this.TxtContras.Size = new System.Drawing.Size(100, 21);
 			this.TxtContras.TabIndex = 4;
 			this.TxtContras.UseSystemPasswordChar = true;
+			// 
+			// label3
+			// 
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(53, 47);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(159, 33);
+			this.label3.TabIndex = 7;
+			this.label3.Text = "Control Escolar";
+			this.label3.Click += new System.EventHandler(this.Label3Click);
 			// 
 			// MainForm
 			// 
@@ -120,6 +132,7 @@ namespace Password_SNCF
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ControlLightLight;
 			this.ClientSize = new System.Drawing.Size(478, 276);
+			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.TxtContras);

@@ -37,5 +37,9 @@ namespace Password_SNCF
 		{
 	
 		}
+		void Label3Click(object sender, EventArgs e)
+		{
+	
+		}
 	}
 }
